@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+# The build system doesn't use CPPFLAGS, pass them to CFLAGS to enable the
+# missing (hardening) flags. Also enable Wall and Wextra to spot basic irregularities.
+export DEB_CFLAGS_MAINT_APPEND = $(shell dpkg-buildflags --get CPPFLAGS) -Wall -Wextra
+
+%:
+	dh $@
+
+override_dh_auto_build-indep:
+ifeq ($(filter nodoc,$(DEB_BUILD_PROFILES)),)
+	$(MAKE) doc
+endif

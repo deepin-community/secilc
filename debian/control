@@ -1,0 +1,57 @@
+Source: secilc
+Vcs-Git: https://salsa.debian.org/selinux-team/secilc.git
+Vcs-Browser: https://salsa.debian.org/selinux-team/secilc
+Priority: optional
+Section: utils
+Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Uploaders: Laurent Bigonville <bigon@debian.org>
+Standards-Version: 4.6.0
+Build-Depends: checkpolicy (>= 3.3) <!nocheck>,
+               debhelper-compat (= 13),
+               libsepol-dev (>= 3.3),
+               xmlto
+Build-Depends-Indep: lmodern <!nodoc>,
+                     pandoc <!nodoc>,
+                     texlive-fonts-recommended <!nodoc>,
+                     texlive-latex-extra <!nodoc>,
+                     texlive-latex-recommended <!nodoc>
+Homepage: https://github.com/SELinuxProject/selinux/wiki
+Rules-Requires-Root: no
+
+Package: secilc
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: SELinux CIL compiler
+ Security-enhanced Linux is a patch of the Linux® kernel and a number
+ of utilities with enhanced security functionality designed to add
+ mandatory access controls to Linux. The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement®, Role-based Access
+ Control, and Multi-level Security.
+ .
+ The SELinux CIL Compiler is a compiler that converts the CIL language as
+ described on the CIL design wiki into a kernel binary policy file.
+
+Package: secilc-doc
+Architecture: all
+Depends: ${misc:Depends}
+Section: doc
+Build-Profiles: <!nodoc>
+Description: documentation for the SELinux CIL Compiler
+ Security-enhanced Linux is a patch of the Linux® kernel and a number
+ of utilities with enhanced security functionality designed to add
+ mandatory access controls to Linux. The Security-enhanced Linux
+ kernel contains new architectural components originally developed to
+ improve the security of the Flask operating system. These
+ architectural components provide general support for the enforcement
+ of many kinds of mandatory access control policies, including those
+ based on the concepts of Type Enforcement®, Role-based Access
+ Control, and Multi-level Security.
+ .
+ The SELinux CIL Compiler is a compiler that converts the CIL language as
+ described on the CIL design wiki into a kernel binary policy file.
+ .
+ This package contains the documentation.

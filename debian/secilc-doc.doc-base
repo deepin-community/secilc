@@ -1,0 +1,13 @@
+Document: secilc
+Title: SELinux CIL Reference Guide
+Abstract: The SELinux Common Intermediate Language (CIL) is designed to be a
+ language that sits between one or more high level policy languages (such as the
+ current module language) and the low-level kernel policy representation.
+Section: Programming
+
+Format: PDF
+Files: /usr/share/doc/secilc/pdf/CIL_Reference_Guide.pdf.gz
+
+Format: HTML
+Index: /usr/share/doc/secilc/html/CIL_Reference_Guide.html
+Files: /usr/share/doc/secilc/html/CIL_Reference_Guide.html

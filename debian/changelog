@@ -1,0 +1,97 @@
+secilc (3.3-1) unstable; urgency=medium
+
+  [ Christian Göttsche ]
+  * d/gitlab-ci.yml: Use Debian recipe
+  * d/control: Bump debhelper compat to level 13
+  * d/control: Bump Standards-Version to 4.5.1 (no further changes)
+  * d/rules: Enable build hardening
+  * d/rules: Enable -Wall and -Wextra
+  * d/control: Convert cute fields
+  * d/gitlab-ci.yml: Disable reprotest
+
+  [ Laurent Bigonville ]
+  * debian/watch: Update the regex (again)
+  * New upstream version 3.3
+    - Bump the build-dependencies to >= 3.3 to match the release
+  * debian/control: Bump Standards-Version to 4.6.0 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 07 Nov 2021 23:59:56 +0100
+
+secilc (3.1-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 3.1 to match the release
+  * debian/control: Set Rules-Requires-Root: no
+  * debian/control: Add checkpolicy to the BD, this is required for the tests
+  * debian/control: Bump Standards-Version to 4.5.0 (no further changes)
+  * Add debian/gitlab-ci.yml file
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 15 Jul 2020 09:07:36 +0200
+
+secilc (3.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 3.0 to match the release
+    - Add texlive-latex-extra to the Build-Depends-Indep
+  * debian/control: Bump Standards-Version to 4.4.1 (no further changes)
+  * Bump debhelper compatibility to 12
+  * Add the support for the nodoc build profile
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 11 Dec 2019 16:37:15 +0100
+
+secilc (2.9-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 08 Jul 2019 09:26:27 +0200
+
+secilc (2.9-1) experimental; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 2.9 to match the release
+    - Fix the ability to build the package twice (Closes: #899083)
+  * debian/control: Bump Standards-Version to 4.3.0 (no further changes)
+  * debian/watch: Adjust the URL
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 17 Mar 2019 21:11:23 +0100
+
+secilc (2.8-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 2.8 to match the release
+  * debian/control: Point Vcs-* fields to new (salsa) machine
+  * debian/rules: Adjust to match upstream changes to the build system
+  * debian/control: Bump Standards-Version to 4.1.4 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 28 May 2018 16:09:07 +0200
+
+secilc (2.7-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 2.7 to match the release
+  * Bump debhelper compatibility to 10
+  * Bump Standards-Version to 4.1.0 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 10 Sep 2017 00:32:32 +0200
+
+secilc (2.7~rc2-1) experimental; urgency=medium
+
+  * New upstream release candidate
+    - Bump libsepol1-dev build-dependency to >= 2.7~ to match the release
+  * debian/watch: Add support for rc releases and use macros
+  * debian/control: Bump Standards-Version to 4.0.0 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 21 Jun 2017 20:06:28 +0200
+
+secilc (2.6-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump libsepol1-dev build-dependency to >= 2.6 to match the release
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 28 Oct 2016 11:09:14 +0200
+
+secilc (2.5-1) unstable; urgency=medium
+
+  * Initial version. (Closes: #747668)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 25 Apr 2016 22:03:41 +0200
