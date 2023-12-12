@@ -1,3 +1,26 @@
+secilc (3.5-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository.
+
+  [ Laurent Bigonville ]
+  * New upstream release
+    - Bump the build-dependencies to >= 3.5 to match the release
+  * debian/upstream/signing-key.asc: Add public key of Jason Zaman
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 10 Jul 2023 20:59:07 +0200
+
+secilc (3.4-1) unstable; urgency=medium
+
+  * New upstream release
+    - Bump the build-dependencies to >= 3.4 to match the release
+  * Enable GPG key validation of the upstream tarball
+  * debian/control: Mark secilc-doc as Multi-Arch: foreign
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 04 Jun 2022 14:04:14 +0200
+
 secilc (3.3-1) unstable; urgency=medium
 
   [ Christian Göttsche ]

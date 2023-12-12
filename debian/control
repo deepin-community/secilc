@@ -5,10 +5,10 @@ Priority: optional
 Section: utils
 Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 Uploaders: Laurent Bigonville <bigon@debian.org>
-Standards-Version: 4.6.0
-Build-Depends: checkpolicy (>= 3.3) <!nocheck>,
+Standards-Version: 4.6.2
+Build-Depends: checkpolicy (>= 3.5) <!nocheck>,
                debhelper-compat (= 13),
-               libsepol-dev (>= 3.3),
+               libsepol-dev (>= 3.5),
                xmlto
 Build-Depends-Indep: lmodern <!nodoc>,
                      pandoc <!nodoc>,
@@ -40,6 +40,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Section: doc
 Build-Profiles: <!nodoc>
+Multi-Arch: foreign
 Description: documentation for the SELinux CIL Compiler
  Security-enhanced Linux is a patch of the Linux® kernel and a number
  of utilities with enhanced security functionality designed to add
